@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&family=Reggae+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: gray;
+}
+
+header, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1-nav {
+    color: black;
+    font-family: 'Charmonman', cursive;
+    font-size: 3rem;
+    padding: 0 20px;
+}
+
+.h1-nav .span-nav {
+    font-family: 'Reggae One', cursive;
+    font-size: 6rem;
+}
+
+.presentacion {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    height: 75vh;
+    padding: 25px;
+}
+
+.presentacion h1 {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 50;
+    font-size: 3rem;
+}
+
+.presentacion img {
+    padding: 15px 0;
+}
+
+.presentacion p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0 10px;
+    padding: 0 6%;
+    font-size: 1.3rem;
+}
+
+.perfil {
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 224, 69);
+    height: 75vh;
+    padding: 15px;
+}
+
+.perfil div, .estudios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil h1 {
+    font-size: 1.8rem;
+    padding: 8px 0;
+}
+
+.perfil p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.perfil p::before {
+    content: '✔ ';
+}
+
+.estudios {
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(255, 169, 56);
+    height: 75vh;
+}
+
+.estudios h1 {
+    font-size: 1.8rem;
+    padding: 20px 0 5px 0;
+}
+
+.estudios p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(226, 252, 111);
+    height: 75vh;
+}
+
+.contacto h1 {
+    font-family: 'Reggae One', cursive;
+    font-size: 1.8rem;
+}
+
+img:hover {
+    transform: scale(0.95);
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding: 0 5px;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    background-size: cover;
+    font-weight: 250;
+}
+
+.consulta {
+    width: auto;
+    background-color: rgb(252, 151, 83);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.consu {
+    font-family: 'Fredoka One', cursive;
+    height: 35px;
+    width: 95%;
+    margin: 10px 5px 5px 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border-color: rgb(24, 203, 226);
+    background: rgb(252, 174, 111);
+}
+
+.consu_bt:hover {
+    background-color: rgb(177, 250, 228);
+}
+
+span {
+    color: rgb(226, 252, 111);
+}
+
+footer {
+    padding: 15px;
+}
+
+.a-media {
+    font-size: 2.1rem;
+    color: gray;
+    padding: 10px;
+}
+
+.a-media:hover {
+    color: rgb(60, 163, 129);
+}
+
+.a-media:active {
+    color: lightgreen;
+}
+
+.div-burger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: coral;
+    border-radius: 50%;
+    margin: 10px;
+    animation: cambiar 3s linear 1s infinite alternate forwards;
+}
+
+.div-burger:hover {
+    animation-play-state: paused;
+}
+
+.span-burger {
+    color: black;
+}
+
+.span-burger:hover {
+    color: rgb(235, 49, 105);
+}
+
+@keyframes cambiar {
+    0% {
+        transform: translate(0);
+        background: purple;
+    }
+
+    33% {
+        transform: translate(0, 100%);
+        background: green;
+    }
+
+    66% {
+        transform: translate(-100%, 0);
+        background: coral;
+    }
+}
+
+@media screen and (min-width: 1285px){
+    .presentacion p {
+        padding: 0 28%;
+    }
+    .perfil, .estudios {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+    }
+    .perfil h1, .estudios h1 {
+        font-size: 2.4rem;
+        padding: 12px 0;
+    }
+    .perfil p, .estudios p, .presentacion p {
+        font-size: 2rem;
+    }
+    .a-media, .span-burger {
+        font-size: 3rem;
+    }
+    .div-burger {
+        top: 90vh;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        animation: cambiar 30s linear 1s infinite alternate forwards;
+    }
+    .span-burger span {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    @keyframes cambiar {
+        0% {
+            transform: translate(0);
+            background: purple;
+        }
+        50% {
+            transform: translate(-95vw, 0);
+            background: gold;
+        }
+    }
+}
